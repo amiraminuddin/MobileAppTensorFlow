@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background1"
+    tools:context=".login">
+
+    <ImageView
+        android:id="@+id/imageViewAvatar"
+        android:layout_width="300dip"
+        android:layout_height="150dip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dip"
+        app:srcCompat="@drawable/logo"
+        tools:srcCompat="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/editTextUsername"
+        android:layout_width="300dip"
+        android:layout_height="40dip"
+        android:layout_below="@id/imageViewAvatar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dip"
+        android:ems="10"
+        android:hint="email"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="300dip"
+        android:layout_height="40dip"
+        android:layout_below="@id/editTextUsername"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dip"
+        android:ems="10"
+        android:hint="@string/hint_password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/login"
+        style="?android:textAppearanceSmall"
+        android:layout_width="200dip"
+        android:layout_height="30dip"
+        android:layout_below="@id/editTextPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="@color/colorAccent"
+        android:text="Login"
+        android:textColor="@android:color/black"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_reset_password"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login"
+        android:layout_marginTop="5dip"
+        android:background="@null"
+        android:text="forgot password"
+        android:textAllCaps="false"
+        android:textColor="@color/colorAccent" />
+
+    <Button
+        android:id="@+id/sign_up_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_reset_password"
+        android:layout_marginTop="5dip"
+        android:background="@null"
+        android:text="Not a Member"
+        android:textAllCaps="false"
+        android:textColor="@color/colorAccent"
+        android:textSize="15dp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/copyright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sign_up_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dip"
+        android:text="MADE BY AMIR AMINUDDIN BIN WAN HUSSIN "
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="8sp" />
+
+    <TextView
+        android:id="@+id/copyright2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/copyright"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dip"
+        android:text="FYP BACHELOR OF ENGINEERING TECHNOLOGY (HONOURS) IN COMPUTER SYSTEMS"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="8sp" />
+
+    <TextView
+        android:id="@+id/copyright3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/copyright2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dip"
+        android:text="UNIKL MIIT 2019"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="8sp" />
+
+</RelativeLayout>

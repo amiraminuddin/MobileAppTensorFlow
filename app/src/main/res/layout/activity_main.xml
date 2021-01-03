@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background1"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="220dip"
+        android:layout_height="320dip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dip" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dip"
+        android:text="Take picture to analyse "
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/selectPhoto"
+        android:layout_width="160dip"
+        android:layout_height="50dip"
+        android:layout_below="@id/imageView1"
+        android:layout_alignParentTop="false"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="bottom|center"
+        android:layout_marginTop="30dip"
+        android:onClick="selectPhoto"
+        android:text="Take Photo"
+        android:textAllCaps="false" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonCheck"
+        android:layout_alignParentTop="false"
+        android:layout_centerHorizontal="true"
+        android:text="avaiblelity"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/buttonCheck"
+        android:layout_width="160dip"
+        android:layout_height="50dip"
+        android:layout_below="@id/selectPhoto"
+        android:layout_alignParentTop="false"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="bottom|center"
+        android:layout_marginTop="30dp"
+        android:onClick="checkPhoto"
+        android:text="Check" />
+
+    <TextView
+        android:id="@+id/textViewAvailable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/selectPhoto"
+        android:layout_alignParentTop="false"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="bottom|center"
+        android:text="TextView"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/copyright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonCheck"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dip"
+        android:text="MADE BY AMIR AMINUDDIN BIN WAN HUSSIN "
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="8sp" />
+
+    <TextView
+        android:id="@+id/copyright2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/copyright"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dip"
+        android:text="FYP BACHELOR OF ENGINEERING TECHNOLOGY (HONOURS) IN COMPUTER SYSTEMS"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="8sp" />
+
+    <TextView
+        android:id="@+id/copyright3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/copyright2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dip"
+        android:text="UNIKL MIIT 2019"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="8sp" />
+
+</RelativeLayout>
